@@ -80,3 +80,40 @@ footer {
     padding: 20px;
     color: #888888;
 }
+
+
+/* S2 - Background color and animation */
+
+body {
+    background: linear-gradient(135deg, #101510, #183d27, #101510);
+    background-size: 200% 200%;
+    animation: backgroundMove 8s ease infinite;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.image img {
+    animation: zoroFloat 3s ease-in-out infinite;
+}
+
+@keyframes zoroFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
